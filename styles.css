@@ -1,0 +1,29 @@
+/* Custom styles for the Task Tracker App */
+.task-item:hover .task-actions {
+    opacity: 1;
+}
+.task-actions {
+    transition: opacity 0.3s ease-in-out;
+}
+.priority-high {
+    border-left: 4px solid #dc2626; /* Updated to a more modern red shade */
+}
+.priority-medium {
+    border-left: 4px solid #fbbf24; /* Updated to a more modern yellow shade */
+}
+.priority-low {
+    border-left: 4px solid #22c55e; /* Updated to a more modern green shade */
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Slightly increased for a smoother effect */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animate-fadeIn {
+    animation: fadeIn 0.4s ease-out forwards; /* Slightly increased duration for a modern feel */
+}
